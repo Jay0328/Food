@@ -1,11 +1,15 @@
 import React, { PureComponent } from 'react';
+import processing from '../../processing';
 
 class Canvas extends PureComponent {
-    state = { src: '/main.pde' }
+    constructor(props) {
+        super(props);
+        this.src = processing.join(' ');
+    }
 
     render() {
         return (
-            <canvas data-processing-sources={this.state.src} />
+            <canvas data-processing-sources={this.src} />
         );
     }
 }
