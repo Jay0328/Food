@@ -4,6 +4,17 @@
         "stage-0",
         "react"
     ],
+    "plugins": [
+        [
+            "transform-decorators-legacy"
+        ],
+        [
+            "transform-class-properties",
+            {
+                "loose": true
+            }
+        ]
+    ],
     "comments": false,
     "env": {
         "modules": false
