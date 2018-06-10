@@ -2,7 +2,7 @@ export default {
   shoppingCart: {
     position: 'fixed',
     color: 'black',
-    bottom: '15%',
+    bottom: '10%',
     right: '8%',
     width: 67,
     height: 67,

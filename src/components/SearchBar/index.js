@@ -1,8 +1,10 @@
 import React, { PureComponent } from 'react';
+import { withRouter } from 'react-router-dom';
 import withStyle from 'react-jss';
 import cx from 'classnames';
 import styles from './styles';
 
+@withRouter
 @withStyle(styles)
 class SearchBar extends PureComponent {
   state = { value: '' }

@@ -10,6 +10,7 @@ router
     .get((req, res) => res.sendFile(path.join(__dirname, 'dist', 'index.html')));
 
 app.use(express.static(__dirname + '/dist'));
+app.use(express.static(__dirname + '/public'));
 app.use(express.static(__dirname + '/processing'));
 
 app.use(router);

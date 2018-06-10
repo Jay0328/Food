@@ -12,7 +12,7 @@ class Back extends PureComponent {
         className={classes.back}
         to="/"
       >
-        <i class="fas fa-angle-left"></i>
+        <i className="fas fa-angle-left"></i>
       </Link>
     );
   }

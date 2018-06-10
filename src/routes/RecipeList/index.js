@@ -1,32 +1,41 @@
 import React, { PureComponent } from 'react';
-import { withRouter } from 'react-router-dom';
+import { withRouter, Link } from 'react-router-dom';
 import withStyle from 'react-jss';
-import RecipeRecommended from '../../components/RecipeRecommended';
+import Recipe from '../../components/Recipe';
 import Gallery from '../../components/Gallery';
 import CircleImage from '../../components/CircleImage';
-import { recipeRecommendeds, recipes, ingredients } from '../../config';
+import { recipes, ingredients } from '../../config';
 import styles from './styles';
 
 @withRouter
 @withStyle(styles)
 class RecipeList extends PureComponent {
-  state = { recommendedIndex: 0 }
+  state = { recipeIndex: 0 }
 
-  onRecommendedChange = (recommendedIndex) => () => this.setState({
-    recommendedIndex
+  onRecommendedChange = (recipeIndex) => () => this.setState({
+    recipeIndex
   })
 
   render() {
     const { classes } = this.props;
-    const { recommendedIndex } = this.state;
+    const { recipeIndex } = this.state;
     return (
-      <main>
-        <RecipeRecommended
-          src={recipeRecommendeds[recommendedIndex]}
-        />
+      <main className={classes.recipeList}>
+        <Link
+          className={classes.recommended}
+          to={`recipe/${recipeIndex}/`}
+        >
+          <Recipe
+            width="100%"
+            height={320}
+            backgroundColor="#f4f4f4"
+            showImage
+            index={recipeIndex}
+          />
+        </Link>
         <section>
           <h3 className={classes.galleryHeader}>
-            其他食譜
+            推薦食譜
           </h3>
           <Gallery
             width={window.innerWidth}

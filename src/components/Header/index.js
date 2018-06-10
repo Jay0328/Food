@@ -15,7 +15,7 @@ class Header extends PureComponent {
       <header className={classes.header}>
         <Switch>
           <Route exact strict path='/' component={MenuBar} />
-          <Route exact strict path='/recipe/' component={Back} />
+          <Route exact strict path='/recipe/:index/' component={Back} />
         </Switch>
         <SearchBar />
       </header>
