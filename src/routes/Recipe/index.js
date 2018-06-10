@@ -20,8 +20,8 @@ class RecipePage extends PureComponent {
         />
         <Recipe
           className={classes.recipe}
-          width={300}
-          height={300}
+          width={340}
+          height={340}
           backgroundColor="white"
           opacity={0.8}
           showIngredients

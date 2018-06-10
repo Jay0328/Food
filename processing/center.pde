@@ -12,8 +12,8 @@ class Center
 
   void run()
   {
-    fill(0);
-    stroke(255);
+    fill(255);
+    stroke(200);
     strokeWeight(2);
     ellipse(location.x,location.y, r, r);
   }

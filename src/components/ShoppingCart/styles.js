@@ -2,8 +2,8 @@ export default {
   shoppingCart: {
     position: 'fixed',
     color: 'black',
-    bottom: '10%',
-    right: '8%',
+    bottom: '5%',
+    right: '5%',
     width: 67,
     height: 67,
     zIndex: 100,

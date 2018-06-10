@@ -23,10 +23,12 @@ export default {
   section: {
     display: 'flex',
     flexDirection: 'column',
+    flex: '1 1 60%',
   },
   info: {
     display: 'flex',
     flexDirection: 'column',
+    flex: '1 1 40%',
     marginLeft: 'auto',
     fontFamily: 'ArialRoundedMT',
   },
