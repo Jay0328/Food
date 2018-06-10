@@ -3,7 +3,7 @@ ArrayList <Center> centers = new ArrayList();
 
 void setup()
 {
-  size(640, 640);
+  size(375, 600);
   noStroke();
   
   centers.add(new Center(300,130,100));

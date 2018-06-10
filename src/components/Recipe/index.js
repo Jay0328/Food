@@ -3,28 +3,36 @@ import cx from 'classnames';
 import withStyle from 'react-jss';
 import { recipesData } from '../../config';
 import CircleImage from '../CircleImage';
+import Ingredients from '../Ingredients';
+import Buy from '../Buy';
 import styles from './styles';
 
 @withStyle(styles)
 class Recipe extends PureComponent {
   render() {
-    const { className, classes, index, showImage, showIngredients } = this.props;
-    const { name, src, price, discount } = recipesData[index];
+    const { className, classes, index, showImage, showIngredients, showBuy } = this.props;
+    const { name, src, ingredients, price, discount } = recipesData[index];
     return (
       <main className={cx(className, classes.recipe)}>
         <h2 className={classes.header}>{name}</h2>
         <main className={classes.content}>
-          {
-            showImage &&
-            <CircleImage
-              src={src}
-              size={180}
-            />
-          }
-          {
-            showIngredients &&
-            <div />
-          }
+          <section className={classes.section}>
+            {
+              showImage &&
+              <CircleImage
+                src={src}
+                size={180}
+              />
+            }
+            {
+              showIngredients &&
+              <Ingredients ingredients={ingredients} />
+            }
+            {
+              showBuy &&
+              <Buy />
+            }
+          </section>
           <aside className={classes.info}>
             <p className={classes.price}>
               <span>${price}</span>

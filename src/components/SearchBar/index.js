@@ -12,9 +12,9 @@ class SearchBar extends PureComponent {
   onChange = ({ target: { value } }) => this.setState({ value })
 
   render() {
-    const { classes } = this.props;
+    const { classes, location } = this.props;
     const { value } = this.state;
-    return (
+    return !location.pathname.includes('/buy/') ? (
       <section className={classes.searchBar}>
         <input
           className={classes.searchInput}
@@ -25,7 +25,7 @@ class SearchBar extends PureComponent {
         />
         <i className={cx(classes.searchIcon, 'fas fa-search')}></i>
       </section>
-    );
+    ) : null;
   }
 }
 

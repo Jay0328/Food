@@ -1,9 +1,10 @@
 export default {
   recipe: {
+    position: 'relative',
     fontSize: ({ fontSize = 16 }) => fontSize,
     width: ({ width }) => width,
     height: ({ height }) => height,
-    padding: 30,
+    padding: 25,
     backgroundColor: ({ backgroundColor }) => backgroundColor,
     opacity: ({ opacity = 1 }) => opacity,
     userSelect: 'none',
@@ -18,6 +19,10 @@ export default {
     fontFamily: 'ArialUnicodeMS',
     marginTop: 0,
     marginBottom: 20,
+  },
+  section: {
+    display: 'flex',
+    flexDirection: 'column',
   },
   info: {
     display: 'flex',

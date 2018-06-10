@@ -25,6 +25,7 @@ class RecipePage extends PureComponent {
           backgroundColor="white"
           opacity={0.8}
           showIngredients
+          showBuy
           index={index}
         />
       </main>
