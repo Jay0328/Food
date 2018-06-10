@@ -54,7 +54,7 @@ class RecipeList extends PureComponent {
         </section>
         <section>
           <h3 className={classes.galleryHeader}>
-            單買食材
+            推薦食材
           </h3>
           <Gallery
             width={window.innerWidth}
