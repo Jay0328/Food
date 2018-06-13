@@ -1,17 +1,20 @@
 export const recipesData = [
   {
-    name: '公車站牌',
+    name: '清炒高麗菜',
     ingredients: [
-      '高麗菜 半顆',
-      '紅蘿蔔 1/4 條',
-      '蒜頭 適量',
+      '高麗菜 100公克 ',
+      '大蒜 2粒',
       '飲用水 20cc',
+      '鹽 1小匙',
+      '鮮雞粉 1/2小匙',
       '',
       '作法：',
-      '1.將高麗菜切絲',
-      '2.將紅蘿蔔切絲'
+      '1.高麗菜剝下葉片洗淨，切方片。',
+      '2.大蒜洗淨，去皮切片；備用。',
+      '3.熱鍋倒入適量油燒熱，放入蒜片以中火炒香。',
+      '4.再加入高麗菜片及所有調味料翻炒至熟即可。'
     ],
-    price: 30,
+    price: 6,
     discount: 50,
     src: '/00.png',
   },
@@ -52,10 +55,10 @@ export const recipesData = [
     src: '/03.png',
   },
   {
-    name: '大家好',
+    name: '龍鬚白雪',
     ingredients: [
-      '高麗菜 半顆',
-      '紅蘿蔔 1/4 條',
+      '雪白菇',
+      '龍鬚菜',
       '蒜頭 適量',
       '飲用水 20cc'
     ],
@@ -64,7 +67,7 @@ export const recipesData = [
     src: 'https://img.glyphs.co/img?src=aHR0cHM6Ly9zMy5tZWRpYWxvb3QuY29tL3Jlc291cmNlcy80MDQtRXJyb3ItUGFnZS1WZWN0b3ItSWNvbnMtUHJldmlldy0xLmpwZw&q=90&enlarge=true&h=1036&w=1600',
   },
   {
-    name: '吃屎吧ㄌㄐ組員',
+    name: '洋芋烤鴻禧菇',
     ingredients: [
       '高麗菜 半顆',
       '紅蘿蔔 1/4 條',

@@ -27,7 +27,7 @@ class RecipeList extends PureComponent {
         >
           <Recipe
             width="100%"
-            height={320}
+            height={280}
             backgroundColor="#f4f4f4"
             showImage
             index={recipeIndex}
