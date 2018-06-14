@@ -13,7 +13,7 @@ class Ingredients extends PureComponent {
     return (
       <p className={classes.ingredients}>
         {ingredients.map(i => (
-          i ? <span key={i}>{i}</span> : <br />
+          i ? <span key={i}>{i}</span> : <br key={i} />
         ))}
       </p>
     );

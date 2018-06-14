@@ -11,7 +11,7 @@ import styles from './styles';
 @withRouter
 @withStyle(styles)
 class RecipeList extends PureComponent {
-  state = { recipeIndex: 0 }
+  state = { recipeIndex: +this.props.location.state || 0 }
 
   onRecommendedChange = (recipeIndex) => () => this.setState({
     recipeIndex

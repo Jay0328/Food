@@ -16,8 +16,8 @@ const contacts = [
 @withStyle(styles)
 class Footer extends PureComponent {
   render() {
-    const { classes, match: { pathname } } = this.props;
-    const show = pathname !== '/buy/';
+    const { classes, location: { pathname } } = this.props;
+    const show = !pathname.includes('/buy/');
     return show ? (
       <footer className={classes.footer}>
         <hr />

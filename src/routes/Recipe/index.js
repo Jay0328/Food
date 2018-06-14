@@ -1,5 +1,5 @@
 import React, { PureComponent, Fragment } from 'react';
-import { withRouter, Link } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import withStyle from 'react-jss';
 import Recipe from '../../components/Recipe';
 import Footer from '../../components/Footer';

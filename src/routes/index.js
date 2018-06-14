@@ -12,7 +12,7 @@ class Routes extends PureComponent {
       <Switch>
         <Route exact strict path='/' component={RecipeList} />
         <Route exact strict path='/recipe/:index/' component={Recipe} />
-        <Route exact strict path='/buy/' component={Buy} />
+        <Route exact strict path='/buy/:index/' component={Buy} />
       </Switch>
     );
   }
