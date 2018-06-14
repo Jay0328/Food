@@ -18,7 +18,7 @@ export default {
   contacts: {
     display: 'flex',
     justifyContent: 'center',
-    margin: '20px 0',
+    margin: '8px 0',
   },
   icon: {
     margin: '0 3px'
