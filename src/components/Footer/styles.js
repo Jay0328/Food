@@ -2,7 +2,7 @@ export default {
   footer: {
     display: 'flex',
     flexDirection: 'column',
-    padding: '16px',
+    padding: '27px',
     color: '#777',
     backgroundColor: '#f4f4f4',
     '& hr': {
